@@ -53,8 +53,6 @@ a {
 .portfolio-content,
 .enquire-chat h3,
 footer,
-.section-about h2,
-.section-about h3,
 #myCV,
 ._item {
   font-family: $secondaryFont;
@@ -62,7 +60,6 @@ footer,
 
 .my-work p,
 .enquire-msg,
-.section-about h4,
 .qual-item h3 {
   font-family: $primaryFont;
 }
@@ -134,29 +131,6 @@ footer,
 
   background-color: $secondaryBGcolor;
   border-radius: 6px;
-}
-
-// Section about
-
-.section-about {
-  h3,
-  h4 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 300;
-    line-height: 2rem;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-  }
 }
 
 .qual-group {
@@ -401,12 +375,6 @@ footer {
   }
 }
 
-.copy {
-  color: rgb(209, 209, 209);
-  margin-top: 1rem;
-  font-size: 0.95rem;
-}
-
 // RESPONSIVE
 @media only screen and (min-width: 3840px) {
   html {
@@ -451,13 +419,6 @@ footer {
   header h1 {
     font-size: 2.2rem;
     width: 90%;
-  }
-
-  .section-about {
-    h3,
-    h4 {
-      width: 80%;
-    }
   }
 
   .section {

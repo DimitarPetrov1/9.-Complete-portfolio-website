@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- DESCRIBE WHAT THE WEBSITE IS FOR-->
-    <meta name="description"
-        content="My name is Dimitar Petrov, and I am a Front-End Developer. This is my portfolio website">
+    <meta
+      name="description"
+      content="My name is Dimitar Petrov, and I am a Front-End Developer. This is my portfolio website"
+    />
     <title>Dimitar Petrov | Portfolio</title>
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="intro">
+      <nav class="top-nav">
+        <ul>
+          <li class="li-single">
+            <a href="index.html" class="myname"
+              ><img
+                class="logoname"
+                src="img/logoname.png"
+                alt="Dimitar Petrov"
+            /></a>
+            <br />
+            <small>
+              <p>Portfolio</p>
+            </small>
+          </li>
+          <li class="li-group"><a href="about.html">About me</a></li>
+          <li class="li-group">
+            <p class="contact-btn" onclick="goToContact()">Contact</p>
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="top-nav">
-            <ul>
-                <li class="li-single"><a href="index.html" class="myname"><img class="logoname" src="img/logoname.png" alt="Dimitar Petrov"></a>
-                    <br>
-                    <small>
-                        <p>Portfolio</p>
-                    </small>
-                </li>
-                <li class="li-group"><a href="about.html">About me</a></li>
-                <li class="li-group">
-                    <p class="contact-btn" onclick="goToContact()">Contact</p>
-                </li>
-            </ul>
-        </nav>
+      <h1>My name is Dimitar Petrov and I am a Front-End Developer.</h1>
 
-        <h1>My name is Dimitar Petrov and I am a Front-End Developer.</h1>
-
-        <img onclick="goToWork()" src="img/svg/chevron-down.svg" class="down-arrow pulse" alt="Arrow">
-
+      <img
+        onclick="goToWork()"
+        src="img/svg/chevron-down.svg"
+        class="down-arrow pulse"
+        alt="Arrow"
+      />
     </header>
 
     <!-- My work section -->
     <section class="section my-work">
+      <h2>My Projects</h2>
+      <p>
+        I'm based in <strong>Bulgaria</strong>, and I'm fluent in both writen
+        and spoken English. I like to implement the latest technlogies in my
+        projects
+      </p>
 
-        <h2>My Projects</h2>
-        <p>I'm based in <strong>Bulgaria</strong>, and I'm fluent in both writen and spoken English. I like to implement
-            the latest technlogies in my projects</p>
-
-        <ul class="portfolio-wrap">
-            <li class="portfolio-item">
-                <div class="color-overlay"></div>
-                <a href="https://movie-app-344d0.web.app" target="_blank">
-                    <img class="portfolio-bg-img" src="img/mv1.jpg" alt="Portfolio image">
-                    <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
-                    <div class="portfolio-content">
-                        React movie streaming website demo
-                    </div>
-                </a>
-            </li>
-            <li class="portfolio-item">
-                <div class="color-overlay"></div>
-                <a href="https://ui-aa65d.web.app/" target="_blank">
-                    <img class="portfolio-bg-img" src="img/gmailui.jpg" alt="Portfolio image">
-                    <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
-                    <div class="portfolio-content">
-                        React Gmail UI Clone
-                    </div>
-                </a>
-            </li>
-            <li class="portfolio-item">
-                <div class="color-overlay"></div>
-                <a href="https://item-page-demo.web.app/" target="_blank">
-                    <img class="portfolio-bg-img" src="img/shoestore.jpg" alt="Portfolio image">
-                    <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
-                    <div class="portfolio-content">
-                        Online store item page demo
-                    </div>
-                </a>
-            </li>
-        </ul>
-
-
+      <ul class="portfolio-wrap">
+        <li class="portfolio-item">
+          <div class="color-overlay"></div>
+          <a href="https://movie-app-344d0.web.app" target="_blank">
+            <img
+              class="portfolio-bg-img"
+              src="img/mv1.jpg"
+              alt="Portfolio image"
+            />
+            <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
+            <div class="portfolio-content">
+              React movie streaming website demo
+            </div>
+          </a>
+        </li>
+        <li class="portfolio-item">
+          <div class="color-overlay"></div>
+          <a href="https://ui-aa65d.web.app/" target="_blank">
+            <img
+              class="portfolio-bg-img"
+              src="img/gmailui.jpg"
+              alt="Portfolio image"
+            />
+            <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
+            <div class="portfolio-content">React Gmail UI Clone</div>
+          </a>
+        </li>
+        <li class="portfolio-item">
+          <div class="color-overlay"></div>
+          <a href="https://item-page-demo.web.app/" target="_blank">
+            <img
+              class="portfolio-bg-img"
+              src="img/shoestore.jpg"
+              alt="Portfolio image"
+            />
+            <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
+            <div class="portfolio-content">Online store item page demo</div>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="section enqire contact-me">
-
-        <div class="enquire-chat">
-            <h3>Lookng to team up or to hire me?</h3>
-            <a href="mailto:dimitarpetrov1990@gmail.com" class="pulse enquire-msg">Get in touch</a>
-        </div>
-
+      <div class="enquire-chat">
+        <h3>Lookng to team up or to hire me?</h3>
+        <a href="mailto:dimitarpetrov1990@gmail.com" class="pulse enquire-msg"
+          >Get in touch</a
+        >
+      </div>
     </section>
 
     <footer>
-        <!-- <div class="social-footer">
+      <!-- <div class="social-footer">
             <ul>
                 <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -104,13 +120,8 @@
                 </li>
             </ul>
         </div> -->
-
-        <p class="copy">
-            <i>2020 Portfolio Theme.</i> Developed by Dimitar P
-        </p>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
