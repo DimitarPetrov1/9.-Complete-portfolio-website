@@ -28,6 +28,12 @@ a {
   text-decoration: none;
 }
 
+.logoname {
+  width: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .intro h1,
 .top-nav,
 .my-work h2,
@@ -109,7 +115,8 @@ footer,
 }
 
 .intro-about .top-nav {
-  background-color: #2385d5;
+  background: -webkit-gradient(linear, left top, right top, from(#353535), to(#464646));
+  background: linear-gradient(90deg, #353535 0%, #464646 100%);
 }
 
 #myCV {
@@ -274,7 +281,7 @@ header h1 {
 }
 
 .color-overlay {
-  background-color: rgba(35, 133, 213, 0.6);
+  background-color: rgba(35, 133, 213, 0.5);
   position: absolute;
   width: 100%;
   height: 45vh;
@@ -310,6 +317,7 @@ header h1 {
   font-size: 1.4rem;
   color: #fff;
   z-index: 3;
+  text-align: center;
 }
 
 .portfolio-content img {
@@ -433,9 +441,6 @@ footer a {
         flex-basis: 49.5%;
     height: 40vh;
   }
-  .color-overlay {
-    height: 40vh;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -492,6 +497,12 @@ footer a {
 }
 
 @media only screen and (max-width: 600px) {
+  .intro {
+    height: 96vh;
+  }
+  .intro-about {
+    height: auto;
+  }
   .top-nav {
     position: fixed;
     bottom: 0;
@@ -542,9 +553,6 @@ footer a {
         flex-basis: 100%;
     height: 50vh;
   }
-  .color-overlay {
-    height: 50vh;
-  }
   footer {
     padding-bottom: 100px;
   }
@@ -567,9 +575,6 @@ footer a {
     font-size: 1.8rem;
   }
   .portfolio-item {
-    height: 30vh;
-  }
-  .color-overlay {
     height: 30vh;
   }
   ._item ul li {
