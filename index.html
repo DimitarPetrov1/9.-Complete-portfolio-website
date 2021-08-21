@@ -30,14 +30,16 @@
               <p>Portfolio</p>
             </small>
           </li>
-          <li class="li-group"><a href="about.html">About me</a></li>
           <li class="li-group">
-            <p class="contact-btn" onclick="goToContact()">Contact</p>
+            <p class="btn" onclick="goToCV()">My CV</p>
+          </li>
+          <li class="li-group">
+            <p class="btn" onclick="goToContact()">Contact</p>
           </li>
         </ul>
       </nav>
 
-      <h1>My name is Dimitar Petrov and I am a Front-End Developer.</h1>
+      <h1>My name is Dimitar Petrov and I am a Front-End Developer</h1>
 
       <img
         onclick="goToWork()"
@@ -50,11 +52,6 @@
     <!-- My work section -->
     <section class="section my-work">
       <h2>My Projects</h2>
-      <p>
-        I'm based in <strong>Bulgaria</strong>, and I'm fluent in both writen
-        and spoken English. I like to implement the latest technlogies in my
-        projects
-      </p>
 
       <ul class="portfolio-wrap">
         <li class="portfolio-item">
@@ -95,7 +92,75 @@
             <div class="portfolio-content">Online store item page demo</div>
           </a>
         </li>
+        <li class="portfolio-item">
+          <div class="color-overlay"></div>
+          <a href="https://nervous-brown-01e67e.netlify.app/" target="_blank">
+            <img
+              class="portfolio-bg-img"
+              src="img/weather-app.jpg"
+              alt="Portfolio image"
+            />
+            <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
+            <div class="portfolio-content">JS Weather App</div>
+          </a>
+        </li>
+        <li class="portfolio-item">
+          <div class="color-overlay"></div>
+          <a
+            href="https://determined-hawking-58b0e7.netlify.app/"
+            target="_blank"
+          >
+            <img
+              class="portfolio-bg-img"
+              src="img/pizza-app.jpg"
+              alt="Portfolio image"
+            />
+            <!-- <img class="portfolio-bg-img" src="" alt="Portfolio image"> -->
+            <div class="portfolio-content">React Pizza App</div>
+          </a>
+        </li>
       </ul>
+    </section>
+
+    <section class="section section-about">
+      <h2>My CV</h2>
+      <p><a href="#" id="myCV">Download</a></p>
+    </section>
+
+    <section class="section qual-group">
+      <div class="qual-item">
+        <h3>Skills</h3>
+        <br />
+        <div class="_item">
+          <h4>Development</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/SCSS/LESS</li>
+            <li>Javascript</li>
+            <li>React JS</li>
+            <li>Bootstrap</li>
+            <li>Material UI</li>
+            <li>Wordpress</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- fjkdhfdgfusgfuy -->
+    <div class="separator"></div>
+
+    <section class="section qual-group">
+      <div class="qual-item">
+        <h3>Tools</h3>
+        <br />
+        <div class="_item">
+          <h4>Design</h4>
+          <ul>
+            <li>Adobe Photoshop</li>
+            <li>Adobe XD</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="section enqire contact-me">

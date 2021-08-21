@@ -26,13 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-// CLEARFIX CLASS
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 // ==========
 ul {
   list-style: none;
@@ -96,7 +89,7 @@ footer,
       pointer-events: none;
     }
 
-    .contact-btn {
+    .btn {
       font-style: normal;
       color: #fff;
       pointer-events: initial;
@@ -231,12 +224,16 @@ header {
     text-align: center;
     width: 40%;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
+}
+
+.section-about h2 {
+  font-family: $secondaryFont;
 }
 
 // Portfolio
@@ -431,7 +428,7 @@ footer {
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 1rem;
     }
   }
 
